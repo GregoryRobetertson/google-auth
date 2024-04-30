@@ -8,14 +8,14 @@ export default function GoogleSignIn() {
     try {
         const result = await signInWithPopup(auth, provider);
         const user = result.user;
-        console.log('User is signed in:', user.displayName);
+        console.log('User signed in:', user.displayName);
     } catch (error) {
         console.error('Error signing in:', error);
     }
    } 
   return (
     <>
-    <button> Sign in with Google </button>
+    <button onClick={handGoogleSignIn}> Sign in with Google </button>
     <p>Click the button above to sign in!</p>
     </>
     
