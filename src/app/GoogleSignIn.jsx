@@ -1,4 +1,4 @@
-'use clien';
+'use client';
 import { signInWithPopup } from 'firebase/auth';
 import { auth, provider } from './firebaseConfig';
 import React from 'react'
